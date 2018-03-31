@@ -317,12 +317,14 @@ hr {
 }
 
 #intro.intro {
-	padding:200px 0 150px 0;
+	padding:250px 0 125px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
 .intro .slogan {
   text-align: center;
-
 }
 
 .intro .page-scroll {
