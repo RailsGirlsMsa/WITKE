@@ -3,6 +3,5 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
-root 'posts#blog'
-  resources :posts 
+get "/blogs/page", to:"pages#blogs",as:"blogs"
 end
