@@ -3,5 +3,5 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
-get "/blogs/page", to:"pages#blogs",as:"blogs"
+get "/welcome/blog", to:"welcome#blog",as:"blog"
 end
