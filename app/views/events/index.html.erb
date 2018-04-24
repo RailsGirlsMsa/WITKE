@@ -15,6 +15,7 @@
         <%= link_to "READ MORE", event_path(event) %>
       </div>
       <% if admin_signed_in? %>
+        <%= render 'layouts/navigation' %>
         <%= link_to "Show", event_path(event), class: "btn btn-primary" %>
         <%= link_to "Edit", edit_event_path(event), class: "btn btn-default" %>
         <%= link_to "Delete", event_path(event), class: "btn btn-danger", data: {:confirm => "Are you sure?"}, method: :delete %>
