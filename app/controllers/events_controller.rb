@@ -1,4 +1,6 @@
 class EventsController < ApplicationController
+  #This authenticates admin whenever an event is to be created, updated or destroyed.
+  before_action :authenticate_admin!, except: [:index, :show]
   before_action :find_event, only: [:edit, :update, :show, :delete]
 
   # Index action to render all events
