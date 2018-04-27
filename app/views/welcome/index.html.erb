@@ -138,15 +138,19 @@ Duis aute irure dolor sed do eiusmod tempor incididunt in reprehenderit in volup
 						<div class="section-heading text-center">
 						<div class="wow bounceInDown" data-wow-delay="0.2s">
 							<h2>Events</h2>
-
 						</div>
 						</div>
-
+            <div class="container" style="padding-top:50px;" "margin-bottom:90px;">
+              <% @events.each do |event| %>
+              <%= render :partial => "events/index", :locals => {:event => @events}%>
+              <%end%>
+          
+</div>
 				</div>
 			</div>
 		</div>
 
-    
+
 	</section>
 	<!-- /Section: events -->
 

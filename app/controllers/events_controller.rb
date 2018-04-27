@@ -27,10 +27,12 @@ class EventsController < ApplicationController
 
   # Edit action retrives the event and renders the edit page
   def edit
+    @event = Event.find(params[:id])
   end
 
   # Update action updates the event with the new information
   def update
+    @event = Event.find(params[:id])
     if @event.update_attributes(event_params)
       flash[:notice] = "Successfully updated event!"
       redirect_to event_path(@events)
@@ -42,11 +44,15 @@ class EventsController < ApplicationController
 
   # The show action renders the individual event after retrieving the the id
   def show
+    @events = Event.all
+    render :index
   end
 
   # The destroy action removes the event permanently from the database
   def destroy
-    if @event.destroy
+    @event = Event.find(params[:id])
+    if @event.present?
+      @event.destroy
       flash[:notice] = "Successfully deleted event!"
       redirect_to events_path
     else
@@ -57,7 +63,7 @@ class EventsController < ApplicationController
   private
 
   def event_params
-    params.require(:event).permit(:title, :body)
+    params.require(:event). permit(:title, :body)
   end
 
   def find_event
