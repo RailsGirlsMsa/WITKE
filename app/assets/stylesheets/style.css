@@ -235,7 +235,6 @@ img.img-responsive {
   box-shadow: 10px 0px #39CCCC, 10px 0px #01FF70;
   animation: shadowSpin 1s ease-in-out infinite;
 }
-
 /* misc */
 hr {
   margin-top: 10px;
@@ -254,8 +253,8 @@ hr {
 ============================ */
 
 .home-section {
-    padding-top: 120px;
-    padding-bottom: 110px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 	display:block;
     position:relative;
     z-index:120;
