@@ -1,24 +1,28 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# **WIT/KE**
 
-Things you may want to cover:
+This is a website that features leading women in Technology in Kenya.
+    
+  ## **Getting Started** 
 
-* Ruby version
+  ### **System Requirements**
+       - Ruby 2.4.1 or higher
+       - Rails 4.2.9 or higher
+  ### **Configuration**
+  
+        git clone https://github.com/RailsGirlsMsa/WITKE.git
+        
+        cd WITKE
+        
+        run bundle install
+        
+        run rails server or rails s
 
-* System dependencies
+ ## **Testing**
+ 
+ 
+ This project is lincenced under the MIT license.
 
-* Configuration
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

@@ -90,6 +90,23 @@ img.img-responsive {
 	margin: 0 auto;
 }
 
+.search-container{
+  float:right;
+}
+
+.search-container button{
+  float: right;
+  padding: 3px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
 
 .navbar {
     margin-bottom: 0;
@@ -260,8 +277,8 @@ hr {
 ============================ */
 
 .home-section {
-    padding-top: 120px;
-    padding-bottom: 110px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 	display:block;
     position:relative;
     z-index:120;
