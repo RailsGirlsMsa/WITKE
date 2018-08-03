@@ -2,6 +2,6 @@ class WelcomeController < ApplicationController
   def index
   end
 
-  def WOF
+  def tech
   end
 end
