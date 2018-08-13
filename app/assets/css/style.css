@@ -77,7 +77,19 @@ img.img-responsive {
 	margin-bottom: 20px;
 }
 
-
+.tabs {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  text-align: center;
+}
+.tabs li {
+  display: table-cell;
+  width: 50%;
+  padding-right: 1px;
+  height: auto;
+  vertical-align: bottom;
+}
 /* ------- Navigation ------------ */
 #navigation {
 	background: #fff;
