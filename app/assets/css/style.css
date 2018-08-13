@@ -90,7 +90,6 @@ img.img-responsive {
 	margin: 0 auto;
 }
 
-
 .navbar {
     margin-bottom: 0;
 }
@@ -260,8 +259,8 @@ hr {
 ============================ */
 
 .home-section {
-    padding-top: 120px;
-    padding-bottom: 110px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 	display:block;
     position:relative;
     z-index:120;
@@ -302,6 +301,31 @@ hr {
 	color: #fff;
 }
 
+.center {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: #e040fb;
+    color: white;
+    border: 1px solid #e040fb;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
 
 
 /* ===========================
